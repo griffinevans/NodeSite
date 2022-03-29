@@ -21,13 +21,13 @@ import ThemeToggleButton from './theme-toggle-button'
 // LinkItem is a NextLink with custom colors
 const LinkItem = ({ href, path, children, isExternal }) => {
     const active = path === href // path must be an href to be valid
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
     return (
         <NextLink href={href}>
             <Link
                 p={2}
                 bg={active ? 'glassTeal' : undefined}
-                color = {active ? '#202023' : inactiveColor}
+                color = {active ? 'red.200' : inactiveColor}
                 isExternal = {isExternal}
             >
                 {children}
@@ -44,7 +44,7 @@ const Navbar = props => {
 			position="fixed"
 			as="nav"
 			w="100%"
-			bg={useColorModeValue('#ffffff40', '#20202380')}
+			bg={useColorModeValue('#ffffff40', '#1e1c3180')}
 			css={{ backdropFilter: 'blur(10px)' }}
 			zIndex={1}
 			{...props}
@@ -70,14 +70,11 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, nmd: 0 }}
                 >
-                    <LinkItem href="/About" path={path}>
+                    <LinkItem href="/about" path={path}>
                         About
                     </LinkItem>
-                    <LinkItem href="/works" path={path}>
-                        Works
-                    </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                        Posts
+                    <LinkItem href="/resume" path={path}>
+			Resume
                     </LinkItem>
                     <Link color={useColorModeValue('gray200', 'whiteAlpha.900')} href="https://github.com/griffinevans" isExternal>
                         GitHub

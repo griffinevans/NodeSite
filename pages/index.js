@@ -1,7 +1,3 @@
-/**
-    *
-    *
-    */
 import NextLink from 'next/link'
 import { 
     Container, 
@@ -19,18 +15,8 @@ import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
     return (
-        <Container>
-            <Box 
-                borderRadius="lg" 
-                bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
-                p={3} 
-                mb={6} 
-                align="center"
-                >
-                    Hello! I&apos;m a student and developer based in California.
-            </Box>
-
-            <Box display={{ md:'flex' }}> 
+        <Container m={2}>
+		<Box display={{ md:'flex' }}> 
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Griffin Evans
@@ -71,7 +57,7 @@ const Page = () => {
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works">
-                        <Button rightIcon={< ChevronRightIcon />} colorScheme="teal">
+                        <Button rightIcon={< ChevronRightIcon />} colorScheme="red">
                             My portfolio
                         </Button>
                     </NextLink>
