@@ -5,7 +5,6 @@ import {
     Heading, 
     Image, 
     Button,
-    Link,
     useColorModeValue 
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -47,7 +46,7 @@ const Page = () => {
                     About
                 </Heading>
                 <Paragraph>
-			Hi! I'm Griffin, a computer science student and programmer based in Santa Cruz, California.
+			Hi! I&apos;m Griffin, a computer science student and programmer based in Santa Cruz, California.
 		</Paragraph>
                 <Paragraph>
 	    Currently, I’m in my final year at Cabrillo College and will be transferring to SFSU to complete my B.S. in Computer Science this fall, with an expected graduation of Spring 2024. I’ve excelled in classes across the computer science field, including linear algebra, data structures & algorithms, and computer organization, and assembly language. 

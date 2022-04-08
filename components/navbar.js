@@ -1,7 +1,5 @@
 import Logo from './logo'
-import NextLink from 'next/link'
 import {
-    Button,
     Container,
     Box,
     Link,
@@ -15,29 +13,10 @@ import {
     IconButton,
     useColorModeValue
 } from '@chakra-ui/react'
-import { ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 
-// LinkItem is a NextLink with custom colors
-const LinkItem = ({ href, path, children, isExternal }) => {
-    const active = path === href // path must be an href to be valid
-    const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
-    return (
-        <NextLink href={href}>
-            <Link
-                p={2}
-                bg={active ? 'glassTeal' : undefined}
-                color = {active ? 'red.200' : inactiveColor}
-                isExternal = {isExternal}
-            >
-                {children}
-            </Link>
-        </NextLink>
-    )
-}
-
 const Navbar = props => {
-    const { path } = props
     
     return (
 	<Box
