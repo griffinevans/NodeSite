@@ -37,28 +37,29 @@ const Page = () => {
                         maxWidth="100px"
                         display="inline-block"
                         borderRadius="full"
-                        src="/images/profile.jpg"
+                        src="/images/headshot.jpg"
                         alt="Profile Picture"
                     />
                 </Box>
             </Box>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Work
+                    About
                 </Heading>
                 <Paragraph>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    qui officia deserunt mollit anim id est laborum.
-                </Paragraph>
+			Hi! I'm Griffin, a computer science student and programmer based in Santa Cruz, California.
+		</Paragraph>
+                <Paragraph>
+	    Currently, I’m in my final year at Cabrillo College and will be transferring to SFSU to complete my B.S. in Computer Science this fall, with an expected graduation of Spring 2024. I’ve excelled in classes across the computer science field, including linear algebra, data structures & algorithms, and computer organization, and assembly language. 
+		</Paragraph>
+                <Paragraph>
+	    I’m familiar with a variety of programming languages including Java, C/C++, Python, Swift & JavaScript, and technologies like Node.js, React, HTML/CSS, JSON, and Git. My personal projects include Android app development, full-stack website development, and hackathons like CruzHack 2022. I’m passionate about open-source software and I use Linux for my day-to-day work. 
+		</Paragraph>
                 <Box align="center" my={4}>
-                    <NextLink href="/works">
-                        <Button rightIcon={< ChevronRightIcon />} colorScheme="red">
-                            My portfolio
+                    <NextLink href="/resume.pdf">
+                        <Button rightIcon={< ChevronRightIcon />} 
+				colorScheme={useColorModeValue('purple','red')}>
+                            More information
                         </Button>
                     </NextLink>
                 </Box>
@@ -67,6 +68,22 @@ const Page = () => {
             <Heading as ="h3" variant="section-title" >
                 Bio 
             </Heading>
+	    <BioSection>
+		<BioYear>2022</BioYear>
+		Admitted into San Francisco State University, class of 2024
+	    </BioSection>
+	    <BioSection>
+		<BioYear>2019</BioYear>
+		Completed GED and began studying Computer Science
+	    </BioSection>
+	    <BioSection>
+		<BioYear>2017</BioYear>
+		Dropped out of high school to attend Cabrillo College
+	    </BioSection>
+	    <BioSection>
+		<BioYear>2015</BioYear>
+		Started attending Santa Cruz High School
+	    </BioSection>
             <BioSection>
                 <BioYear>2001</BioYear>
                 Born in Santa Cruz, California.

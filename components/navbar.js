@@ -40,76 +40,68 @@ const Navbar = props => {
     const { path } = props
     
     return (
-   		<Box
-			position="fixed"
-			as="nav"
-			w="100%"
-			bg={useColorModeValue('#ffffff40', '#1e1c3180')}
-			css={{ backdropFilter: 'blur(10px)' }}
-			zIndex={1}
-			{...props}
-	    >
-			<Container
+	<Box
+		position="fixed"
+		as="nav"
+		w="100%"
+		bg={useColorModeValue('yellow.50', 'gray.800')}
+		css={{ backdropFilter: 'blur(10px)' }}
+		zIndex={1}
+		{...props}
+	>
+		<Container
 			display="flex"
 			p={2}
 			maxW="container.md"
 			wrap="wrap"
 			align="center"
 			justify="space-between"
-			>
-		        <Flex align="center" mr={5}>
-					<Heading as="h1" size="lg" letterSpacing={'tighter'}>
-						<Logo />
-					</Heading>
-		        </Flex>
-                <Stack
-                    direction={{ base: 'column', md: 'row' }}
-                    display={{ base: 'none', md: 'flex' }}
-                    width={{ base: 'full', md: 'auto' }}
-                    alignItems="center"
-                    flexGrow={1}
-                    mt={{ base: 4, nmd: 0 }}
-                >
-                    <LinkItem href="/about" path={path}>
-                        About
-                    </LinkItem>
-                    <LinkItem href="/resume" path={path}>
-			Resume
-                    </LinkItem>
-                    <Link color={useColorModeValue('gray200', 'whiteAlpha.900')} href="https://github.com/griffinevans" isExternal>
-                        GitHub
-                    </Link>
-                </Stack>
-                <Box flex={1} align="right">
-                    <ThemeToggleButton />
-                    <Box ml={2} display={{base: 'inline-block', md: 'none' }}>
-                        <Menu>
-                            <MenuButton 
-                                as={IconButton} 
-                                icon={<HamburgerIcon />} 
-                                variant="outline" 
-                                aria-label="Options"
-                            />
-                            <MenuList>
-                                <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/works" passHref>
-                                    <MenuItem as={Link}>Works</MenuItem>
-                                </NextLink>
-                                <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
-                                </NextLink>
-                                <NextLink href="https://github.com/griffinevans" passHref>
-                                    <MenuItem as={Link}>GitHub</MenuItem>
-                                </NextLink>
-                            </MenuList>
-                        </Menu>
-                    </Box>
-                </Box>
+		>
+		<Flex align="center" mr={5}>
+				<Heading as="h1" size="lg" letterSpacing={'tighter'}>
+					<Logo />
+				</Heading>
+		</Flex>
+	        <Stack
+			direction={{ base: 'column', md: 'row' }}
+	        	display={{ base: 'none', md: 'flex' }}
+	        	width={{ base: 'full', md: 'auto' }}
+	        	alignItems="center"
+	        	flexGrow={1}
+	        	mt={{ base: 4, nmd: 0 }}
+	        >
+	        <Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
+		    	href="../resume.pdf" isExternal>
+		    Resume
+	        </Link>
+	        <Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
+		    	href="https://github.com/griffinevans" isExternal>
+	            GitHub
+	        </Link>
+	        </Stack>
+	        <Box flex={1} align="right">
+	            <ThemeToggleButton />
+	            <Box ml={2} display={{base: 'inline-block', md: 'none' }}>
+	                <Menu>
+	                    <MenuButton 
+	                        as={IconButton} 
+	                        icon={<HamburgerIcon />} 
+	                        variant="outline" 
+	                        aria-label="Options"
+	                    />
+	                    <MenuList>
+				<Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
+						href="../resume.pdf" isExternal>
+					<MenuItem as={Link}>Resume</MenuItem>
+				</Link>
+				<Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
+						href="https://github.com/griffinevans" isExternal>
+					<MenuItem as={Link}>GitHub</MenuItem>
+		            	 </Link>
+	                    </MenuList>
+	                </Menu>
+	            </Box>
+	        </Box>
             </Container>
         </Box>
     )
