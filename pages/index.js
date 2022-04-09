@@ -20,7 +20,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         Griffin Evans
                     </Heading>
-                    <p>Android / Java / Linux</p>
+                    <p>Computer Programming</p>
                 </Box>
 
                 <Box 
@@ -49,10 +49,10 @@ const Page = () => {
 			Hi! I&apos;m Griffin, a computer science student and programmer based in Santa Cruz, California.
 		</Paragraph>
                 <Paragraph>
-	    Currently, I’m in my final year at Cabrillo College and will be transferring to SFSU to complete my B.S. in Computer Science this fall, with an expected graduation of Spring 2024. I’ve excelled in classes across the computer science field, including linear algebra, data structures & algorithms, and computer organization, and assembly language. 
+			Currently, I’m in my final year at Cabrillo College and will be transferring to SFSU to complete my B.S. in Computer Science this fall, with an expected graduation of Spring 2024. I’ve excelled in classes across the computer science field, including Linear Algebra, Data Structures & Algorithms, and Computer Organization. 
 		</Paragraph>
                 <Paragraph>
-	    I’m familiar with a variety of programming languages including Java, C/C++, Python, Swift & JavaScript, and technologies like Node.js, React, HTML/CSS, JSON, and Git. My personal projects include Android app development, full-stack website development, and hackathons like CruzHack 2022. I’m passionate about open-source software and I use Linux for my day-to-day work. 
+			I’m familiar with a variety of programming languages including Java, C/C++, Python, Swift & JavaScript, and technologies like Node.js, React, HTML/CSS, JSON, and Git. My personal projects include Android app development, full-stack website development, and hackathons like CruzHack 2022. I’m passionate about open-source software and I use Linux for my day-to-day work. 
 		</Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/resume.pdf">
@@ -77,7 +77,7 @@ const Page = () => {
 	    </BioSection>
 	    <BioSection>
 		<BioYear>2017</BioYear>
-		Dropped out of high school to attend Cabrillo College
+		Transferred schools to Cabrillo College
 	    </BioSection>
 	    <BioSection>
 		<BioYear>2015</BioYear>
