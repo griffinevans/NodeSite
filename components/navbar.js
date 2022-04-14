@@ -36,52 +36,43 @@ const Navbar = props => {
 			align="center"
 			justify="space-between"
 		>
-		<Flex align="center" mr={5}>
-				<Heading as="h1" size="lg" letterSpacing={'tighter'}>
+	        	<Stack direction='row' align='center'
+	        	>
+				<Heading size="2px" letterSpacing={'tighter'}>
 					<Logo />
 				</Heading>
-		</Flex>
-	        <Stack
-			direction={{ base: 'column', md: 'row' }}
-	        	display={{ base: 'none', md: 'flex' }}
-	        	width={{ base: 'full', md: 'auto' }}
-	        	alignItems="center"
-	        	flexGrow={1}
-	        	mt={{ base: 4, nmd: 0 }}
-	        >
-	        <Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
-		    	href="../resume.pdf" isExternal>
-		    Resume
-	        </Link>
-	        <Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
-		    	href="https://github.com/griffinevans" isExternal>
-	            GitHub
-	        </Link>
-	        </Stack>
-	        <Box flex={1} align="right">
-	            <ThemeToggleButton />
-	            <Box ml={2} display={{base: 'inline-block', md: 'none' }}>
-	                <Menu>
-	                    <MenuButton 
-	                        as={IconButton} 
-	                        icon={<HamburgerIcon />} 
-	                        variant="outline" 
-	                        aria-label="Options"
-	                    />
-	                    <MenuList>
-				<Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
-						href="../resume.pdf" isExternal>
-					<MenuItem as={Link}>Resume</MenuItem>
-				</Link>
-				<Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
-						href="https://github.com/griffinevans" isExternal>
-					<MenuItem as={Link}>GitHub</MenuItem>
-		            	 </Link>
-	                    </MenuList>
-	                </Menu>
-	            </Box>
-	        </Box>
-            </Container>
+				<Link color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+				    	href="../resume.pdf" isExternal>
+				    Resume
+	        		</Link>
+	        		<Link color={useColorModeValue('gray.800', 'whiteAlpha.900')}				    	href="https://github.com/griffinevans" isExternal>
+	        		    GitHub
+	        		</Link>
+	        	</Stack>
+	        	<Box flex={1} align="right">
+	        	    <ThemeToggleButton />
+	        	    <Box ml={2} display={{base: 'inline-block', md: 'none' }}>
+	        	        <Menu>
+	        	            <MenuButton 
+	        	                as={IconButton} 
+	        	                icon={<HamburgerIcon />} 
+	        	                variant="outline" 
+	        	                aria-label="Options"
+	        	            />
+	        	            <MenuList>
+					<Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
+							href="../resume.pdf" isExternal>
+						<MenuItem as={Link}>Resume</MenuItem>
+					</Link>
+					<Link color={useColorModeValue('gray200', 'whiteAlpha.900')}
+							href="https://github.com/griffinevans" isExternal>
+						<MenuItem as={Link}>GitHub</MenuItem>
+			            	 </Link>
+	        	            </MenuList>
+	        	        </Menu>
+	        	    </Box>
+			</Box>
+		</Container>
         </Box>
     )
 }
