@@ -1,17 +1,14 @@
-import NextLink from 'next/link'
 import { 
 	Container, 
-    Center,
+	Center,
 	Link,
 	Box, 
 	Heading, 
 	Image, 
-	Button,
 	IconButton,
-    HStack,
+	HStack,
 	useColorModeValue 
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import { FaTwitter,FaLinkedin } from 'react-icons/fa'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
