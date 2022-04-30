@@ -7,6 +7,7 @@ import {
 	Image, 
 	IconButton,
 	HStack,
+	VStack,
 	useColorModeValue 
 } from '@chakra-ui/react'
 import { FaTwitter,FaLinkedin } from 'react-icons/fa'
@@ -26,44 +27,46 @@ const Page = () => {
 				</Box>
 
 				<Box 
-					> 
+				align="right"> 
 						<Box
 						bg={useColorModeValue('purple.100','red.200')}
+						maxWidth="130px"
 						>
+							<Center>
 								<Image 
 								m={3}
-								maxWidth="100px"
+								maxWidth="90%"
 								display="inline-block"
 								borderRadius="full"
 								src="/images/headshot.jpg"
 								alt="Profile Picture"
 								/>
+							</Center>
 
 								<Center
 								bg={useColorModeValue('purple.200','red.100')}
 								>
 										
-										<HStack
+									<HStack>
+										<Link href="https://twitter.com/grfwings" isExternal>
+										<IconButton icon={<FaTwitter />}
+										colorScheme="transparent"
 										>
-											<Link href="https://twitter.com/grfwings" isExternal>
-											<IconButton icon={<FaTwitter />}
-											colorScheme="transparent"
-											>
-											</IconButton>	
-											</Link>
+										</IconButton>	
+										</Link>
 
-											<Link href="https://linkedin.com/in/griffinrevans/" isExternal>
-											<IconButton icon={<FaLinkedin />}
-											colorScheme='transparent'	
-											>
-											</IconButton>
-											</Link>
+										<Link href="https://linkedin.com/in/griffinrevans/" isExternal>
+										<IconButton icon={<FaLinkedin />}
+										colorScheme='transparent'	
+										>
+										</IconButton>
+										</Link>
 
 										</HStack>	
 								</Center>
-						</Box>
 					</Box>
 				</Box>
+			</Box>
 
 			<Section delay={0.1}>
 				<Heading as="h3" variant="section-title">
