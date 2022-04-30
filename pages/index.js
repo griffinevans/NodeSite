@@ -7,7 +7,6 @@ import {
 	Image, 
 	IconButton,
 	HStack,
-	VStack,
 	useColorModeValue 
 } from '@chakra-ui/react'
 import { FaTwitter,FaLinkedin } from 'react-icons/fa'
