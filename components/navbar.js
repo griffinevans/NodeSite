@@ -16,13 +16,13 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 
 const Navbar = props => {
-
 	return (
 		<Container
 		position="sticky"
 		top={0}
 		as="nav"
 		bg={useColorModeValue('yellow.50', 'gray.800')}
+		{...props}
 		>
 			<Box
 			display="flex"
