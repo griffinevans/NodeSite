@@ -16,7 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
 	return (
-		<Container m={2}>
+		<Container>
 			<Box display={{ md:'flex' }}> 
 				<Box flexGrow={1}>
 					<Heading as="h2" variant="page-title">
@@ -42,27 +42,27 @@ const Page = () => {
 								/>
 							</Center>
 
-								<Center
-								bg={useColorModeValue('purple.200','red.100')}
+						<Center
+						bg={useColorModeValue('purple.200','red.100')}
+						>
+								
+							<HStack>
+								<Link href="https://twitter.com/grfwings" isExternal>
+								<IconButton icon={<FaTwitter />}
+								colorScheme="transparent"
 								>
-										
-									<HStack>
-										<Link href="https://twitter.com/grfwings" isExternal>
-										<IconButton icon={<FaTwitter />}
-										colorScheme="transparent"
-										>
-										</IconButton>	
-										</Link>
+								</IconButton>	
+								</Link>
 
-										<Link href="https://linkedin.com/in/griffinrevans/" isExternal>
-										<IconButton icon={<FaLinkedin />}
-										colorScheme='transparent'	
-										>
-										</IconButton>
-										</Link>
+								<Link href="https://linkedin.com/in/griffinrevans/" isExternal>
+								<IconButton icon={<FaLinkedin />}
+								colorScheme='transparent'	
+								>
+								</IconButton>
+								</Link>
 
-										</HStack>	
-								</Center>
+							</HStack>	
+						</Center>
 					</Box>
 				</Box>
 			</Box>
