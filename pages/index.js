@@ -84,6 +84,10 @@ const Page = () => {
 								Bio 
 								</Heading>
 								<BioSection>
+								<BioYear>August 2022</BioYear>
+                Joined the Mayo Clinic for a 6-month software engineering internship.
+								</BioSection>
+								<BioSection>
 								<BioYear>2022</BioYear>
 								Admitted into San Francisco State University, class of 2024
 								</BioSection>
