@@ -72,7 +72,7 @@ const Page = () => {
 					About
 				</Heading>
 				<Paragraph>
-				  Hi! I&apos;m Griffin, a computer science student, and programmer based in Santa Cruz, California.
+				  Hi! I&apos;m Griffin, a computer science student and programmer based in San Francisco, California.
 				</Paragraph>
 				<br/>
 				<Paragraph>
@@ -84,8 +84,12 @@ const Page = () => {
 								Bio 
 								</Heading>
 								<BioSection>
+								<BioYear>May 2023</BioYear>
+                Left Mayo Clinic to work for IBM as a software engineer intern on IMS SVT & Performance teams.
+								</BioSection>
+								<BioSection>
 								<BioYear>August 2022</BioYear>
-                Joined the Mayo Clinic for a 6-month software engineering internship.
+                Joined the Mayo Clinic for a software engineering internship on the Patient Platform team.
 								</BioSection>
 								<BioSection>
 								<BioYear>2022</BioYear>
